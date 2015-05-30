@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+<!-- search.html-->
+{% block title %}
+Search | Find a Project
+{% endblock %}
+
+{% block body %}
+<div class="row splash-page">
+	<div class="medium-9 medium-centered columns">
+		<div class="panel">
+		<h3>Search for an open source project to work on at GitHub</h3>	
+		<form action="/search" method="post">
+			<input type="text" placeholder="Search for a project" name="user_search" required/>
+			<button class="button tiny round" type="submit">Search</button>
+		</form>
+		<p class="outerheaven"><em>*please note you may only do 5 searches per minute, otherwise your search may yield no results.</em></p>
+		{% block results %}{% endblock %}
+{% block reuslts %}{% endblock %}
+		</div>
+	</div>
+</div>	
+{% endblock %}
+	

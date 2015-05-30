@@ -1,0 +1,17 @@
+{% extends "search.html" %}
+{% block results%}
+{% if api_data["items"] %}
+<ul>
+{% for repo in api_data["items"] %}
+	<li>
+		<h3>{{ repo.name }} by {{repo.owner.login }}</h3>
+		<p>{{ repo.description }}</p>
+		<p><a href="{{ repo.html_url }}" target="_blank">{{ repo.html_url }}</a></p>
+	</li>
+{% endfor %}
+</ul>
+{% else %}
+<p class="flash">No results were found. Try refining your search. </p>
+{% endif %}
+<p>Don't see anything you like? Try <a href="/">another.</a>
+{% endblock %}
