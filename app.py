@@ -22,4 +22,4 @@ def search():
 def page_not_found(error):
 	return "Sorry, this page was not found. Are you lost?", 404
 
-app.run(debug=True)
+app.run(debug=False)
