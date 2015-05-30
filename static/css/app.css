@@ -1,0 +1,28 @@
+body, html {
+	height: 100%;
+	width: 100%
+}
+
+body {
+	background-color: black;
+    background-image: url(https://ununsplash.imgix.net/photo-1429091967365-492aaa5accfe?fit=crop&fm=jpg&h=1700&q=75&w=1300);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+h3 {
+	color: white;
+}
+
+.outerheaven {
+	font-size: 12px;
+}
+
+.splash-page {
+	margin-top: 5%;
+}
+
+.splash-page .panel {
+	background-color: rgba(242, 242, 242, 0.9);
+}
